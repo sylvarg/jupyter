@@ -4,4 +4,10 @@ channels:
   - https://repo.prefix.dev/conda-forge
 dependencies:
   - xeus-python
-  - ipycanvas
+  - numpy<2.3.0 # SciPy wants a NumPy version >=1.23.5 and <2.3.0
+  - matplotlib
+  - scipy
+  - pandas
+  - ipywidgets
+  - ipympl
+  - bqplot # pour la demo (test)
