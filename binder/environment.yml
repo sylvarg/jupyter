@@ -3,10 +3,10 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
+  - notebook
   - voila
   - ipywidgets
   - numpy
   - matplotlib
   - scipy
   - pandas
-  # ajoute ici les libs dont tes notebooks ont besoin@
