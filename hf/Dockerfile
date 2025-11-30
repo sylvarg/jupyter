@@ -20,4 +20,9 @@ RUN mamba env create --prefix $HOME/env -f ./environment.yml
 EXPOSE 7860
 WORKDIR $HOME/app
 
-CMD mamba run -p $HOME/env --no-capture-output voila --no-browser notebooks/
+CMD mamba run -p $HOME/env --no-capture-output \
+    voila notebooks \
+    --no-browser \
+    --port=7860 \
+    --Voila.ip=0.0.0.0 \
+    --Voila.root_dir=/home/user/app
