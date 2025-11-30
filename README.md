@@ -16,24 +16,18 @@ if they require a Python backend for interactivity (typically some uses of `ipyw
 
 ## My notebooks using `voila` available on [Binder](https://mybinder.org/)
 
-- Sampling and Shannon’s Theorem (analog-to-digital conversion):  
-  [![Open via MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sylvarg/jupyter/main?urlpath=voila/render/notebooks/demo/Echantillonnage.ipynb)
+- Sampling and Shannon’s Theorem (analog-to-digital conversion): [![Open via MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sylvarg/jupyter/main?urlpath=voila/render/notebooks/demo/Echantillonnage.ipynb)
 
-- Interpolation (digital-to-analog conversion):  
-  [![Open via MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sylvarg/jupyter/main?urlpath=voila/render/notebooks/demo/Interpolation.ipynb)
+- Interpolation (digital-to-analog conversion): [![Open via MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sylvarg/jupyter/main?urlpath=voila/render/notebooks/demo/Interpolation.ipynb)
 
-- Discrete-Time Fourier Transform:  
-  [![Open via MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sylvarg/jupyter/main?urlpath=voila/render/notebooks/demo/TFSD.ipynb)
+- Fourier Transform: [![Open via MyBinder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sylvarg/jupyter/main?urlpath=voila/render/notebooks/demo/TFSD.ipynb)
 
 ---
 
 ## My notebooks using `voila` available on [Hugging Face Spaces](https://huggingface.co/spaces)
 
-- Sampling and Shannon’s Theorem (analog-to-digital conversion):  
-  [![Open in HF Space](https://img.shields.io/badge/Launch-Open%20in%20HF%20Space-blue?logo=huggingface)](https://sylvarg-demo.hf.space/voila/render/notebooks/Echantillonnage.ipynb)
+- Sampling and Shannon’s Theorem (analog-to-digital conversion): [![Open in HF Space](https://img.shields.io/badge/Launch-Open%20in%20HF%20Space-blue?logo=huggingface)](https://sylvarg-demo.hf.space/voila/render/notebooks/Echantillonnage.ipynb)
 
-- Interpolation (digital-to-analog conversion):  
-  [![Open in HF Space](https://img.shields.io/badge/Launch-Open%20in%20HF%20Space-blue?logo=huggingface)](https://sylvarg-demo.hf.space/voila/render/notebooks/Interpolation.ipynb)
+- Interpolation (digital-to-analog conversion): [![Open in HF Space](https://img.shields.io/badge/Launch-Open%20in%20HF%20Space-blue?logo=huggingface)](https://sylvarg-demo.hf.space/voila/render/notebooks/Interpolation.ipynb)
 
-- Fourier Transform:  
-  [![Open in HF Space](https://img.shields.io/badge/Launch-Open%20in%20HF%20Space-blue?logo=huggingface)](https://sylvarg-demo.hf.space/voila/render/notebooks/TFSD.ipynb)
+- Fourier Transform: [![Open in HF Space](https://img.shields.io/badge/Launch-Open%20in%20HF%20Space-blue?logo=huggingface)](https://sylvarg-demo.hf.space/voila/render/notebooks/TFSD.ipynb)
