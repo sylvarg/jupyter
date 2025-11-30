@@ -25,4 +25,5 @@ CMD mamba run -p $HOME/env --no-capture-output \
     --no-browser \
     --port=7860 \
     --Voila.ip=0.0.0.0 \
-    --Voila.root_dir=/home/user/app
+    --Voila.root_dir=/home/user/app \
+    --Voila.tornado_settings="{'headers': {'Content-Security-Policy': 'frame-ancestors *'}}"

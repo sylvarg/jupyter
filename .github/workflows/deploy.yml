@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "binder/**"
+      - "hf/**"
+      - "README.md"
+      - ".github/workflows/update-hf.yml"
   workflow_dispatch:
     # Ceci crée un bouton "Run workflow" dans l'interface GitHub
 
