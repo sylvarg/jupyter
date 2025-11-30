@@ -1,0 +1,55 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "hf/**"
+      - "notebooks/demo/**"
+      - ".github/workflows/update-hf.yml"
+
+  workflow_dispatch:
+    # Ceci crée un bouton "Run workflow" dans l'interface GitHub
+
+jobs:
+  push-to-hf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout GitHub repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Configure git for Hugging Face
+        run: |
+          git config --global user.email "${{ secrets.HF_USER }}@users.noreply.huggingface.co"
+          git config --global user.name "${{ secrets.HF_USER }}"
+
+      - name: Push to Hugging Face
+        env:
+          HF_USER: ${{ secrets.HF_USER }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          # Cloner le Space Hugging Face (sylvarg/demo)
+          git clone https://huggingface.co/spaces/${HF_USER}/demo hf-space
+
+          # Copier Dockerfile et environment.yml à la racine du Space
+          rsync -av --delete \
+            hf/Dockerfile \
+            hf/environment.yml \
+            hf-space/
+
+          # Copier le CONTENU de notebooks/demo dans notebooks/ sur HF
+          mkdir -p hf-space/notebooks
+          rsync -av --delete \
+            notebooks/demo/ \
+            hf-space/notebooks/
+
+          cd hf-space
+
+          git add .
+          git commit -m "Update from GitHub repo ${GITHUB_REPOSITORY}@${GITHUB_SHA}" || echo "No changes to commit"
+
+          git push https://user:${HF_TOKEN}@huggingface.co/spaces/${HF_USER}/demo main

@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - "*"
+  workflow_dispatch:
+    # Ceci crée un bouton "Run workflow" dans l'interface GitHub
 
 jobs:
   build:

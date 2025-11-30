@@ -1,0 +1,12 @@
+name: voila-hf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - notebook
+  - voila
+  - ipywidgets
+  - numpy
+  - matplotlib
+  - scipy
+  - pandas
