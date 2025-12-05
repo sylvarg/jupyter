@@ -10,4 +10,4 @@ dependencies:
   - pandas
   - ipywidgets
   - ipympl
-  - bqplot # pour la demo (test)
+  - sounddevice
