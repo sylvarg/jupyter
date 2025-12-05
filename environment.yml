@@ -10,4 +10,4 @@ dependencies:
   - pandas
   - ipywidgets
   - ipympl
-  - sounddevice
+  - python-sounddevice
